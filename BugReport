@@ -1,0 +1,30 @@
+Title: Downloading Update to Update Requires Restart loop. 
+Environment: PlayStation 4 – PlayStation Network
+		Call of Duty: Modern Warfare 
+Version: Update 1.08
+Reported by: Hanny Abdullah 
+Date: 11/19/2019
+
+Steps to reproduce: 
+
+1. Startup App 
+2. Enter multiplayer screen
+3. Enter online profile (connecting to online services) 
+4. Downloading update screen 
+5. Download complete; press x to restart (update requires restart) 
+6. Enter online profile. (Steps 3 – 5 are done in a loop) 
+
+
+Expected result: 
+
+	Steps 1 – 5 would occur as usually once. Once the application recognizes that you have the latest update, it will load as usual instead of asking to download the update. 
+
+Actual result: 
+
+	The application repeats the entering of the online profile which then proceeds to ask you to download the update. Update downloads in the application (~15 second download), then says the update requires restart. Once it restarts the app it says download successful and press X to return to the menu. 
+
+
+Proposal: 
+
+I believe this issue arises from the application not recognizing that the latest update is already installed. In my application, I experienced this bug, however from the people I know who also downloaded this application, they did not experience this error. I tried getting into contact with Activision support via there twitter support page, however they were not able to respond to me until almost 6 weeks later. Restarting the PlayStation didn’t work, and neither did restarting the application. I also attempted to delete any saved data on this application, believing the bug would be resolved that way, with no luck. 
+
