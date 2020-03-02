@@ -1,0 +1,67 @@
+Script started on Mon Mar  2 11:51:34 2020
+[?1034hbash-3.2$ wget http://files.grouplens.org/datasets/movielens/ml-latest-small.zip [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kp
+--2020-03-02 11:51:41--  http://files.grouplens.org/datasets/movielens/ml-latest-small.zip
+Resolving files.grouplens.org (files.grouplens.org)... 128.101.65.152
+Connecting to files.grouplens.org (files.grouplens.org)|128.101.65.152|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 978202 (955K) [application/zip]
+Saving to: ‘ml-latest-small.zip’
+
+ml-latest-small.zip   0%[                    ]       0  --.-KB/s               ml-latest-small.zip   8%[>                   ]  78.61K   385KB/s               ml-latest-small.zip  19%[==>                 ] 182.97K   450KB/s               ml-latest-small.zip  34%[=====>              ] 328.77K   530KB/s               ml-latest-small.zip  57%[==========>         ] 550.89K   666KB/s               ml-latest-small.zip  78%[==============>     ] 748.89K   728KB/s               ml-latest-small.zip  97%[==================> ] 928.17K   745KB/s               ml-latest-small.zip 100%[===================>] 955.28K   757KB/s    in 1.3s    
+
+2020-03-02 11:51:43 (757 KB/s) - ‘ml-latest-small.zip’ saved [978202/978202]
+
+bash-3.2$ unz[K[K[K;[Kls -l
+total 1936
+-rw-r--r--  1 hanny  staff  978202 Dec  3 12:14 ml-latest-small.zip
+-rw-r--r--  1 hanny  staff      43 Mar  2 11:51 question2.txt
+-rw-r--r--@ 1 hanny  staff    4312 Feb 26 12:50 top50.csv
+bash-3.2$ unzi[[Kp ml-latest-small.zip
+Archive:  ml-latest-small.zip
+   creating: ml-latest-small/
+  inflating: ml-latest-small/links.csv  
+  inflating: ml-latest-small/tags.csv  
+  inflating: ml-latest-small/ratings.csv  
+  inflating: ml-latest-small/README.txt  
+  inflating: ml-latest-small/movies.csv  
+bash-3.2$ ls -l
+total 1936
+drwxr-xr-x  7 hanny  staff     238 Sep 26  2018 ml-latest-small
+-rw-r--r--  1 hanny  staff  978202 Dec  3 12:14 ml-latest-small.zip
+-rw-r--r--  1 hanny  staff    2056 Mar  2 11:52 question2.txt
+-rw-r--r--@ 1 hanny  staff    4312 Feb 26 12:50 top50.csv
+bash-3.2$ cd ml-latest-small
+bash-3.2$ ls -l
+total 6472
+-rw-r--r--  1 hanny  staff     8342 Sep 26  2018 README.txt
+-rw-r--r--  1 hanny  staff   197979 Sep 26  2018 links.csv
+-rw-r--r--  1 hanny  staff   494431 Sep 26  2018 movies.csv
+-rw-r--r--  1 hanny  staff  2483723 Sep 26  2018 ratings.csv
+-rw-r--r--  1 hanny  staff   118660 Sep 26  2018 tags.csv
+bash-3.2$ exit
+exit
+
+Script done on Mon Mar  2 11:53:48 2020
+Script started on Mon Mar  2 12:07:39 2020
+[?1034hbash-3.2$ tail [K[K[K[K[Khead -n 12 movies.csv.[K
+movieId,title,genres
+1,Toy Story (1995),Adventure|Animation|Children|Comedy|Fantasy
+2,Jumanji (1995),Adventure|Children|Fantasy
+3,Grumpier Old Men (1995),Comedy|Romance
+4,Waiting to Exhale (1995),Comedy|Drama|Romance
+5,Father of the Bride Part II (1995),Comedy
+6,Heat (1995),Action|Crime|Thriller
+7,Sabrina (1995),Comedy|Romance
+8,Tom and Huck (1995),Adventure|Children
+9,Sudden Death (1995),Action
+10,GoldenEye (1995),Action|Adventure|Thriller
+11,"American President, The (1995)",Comedy|Drama|Romance
+bash-3.2$ tail -n 4 movies.csv
+193583,No Game No Life: Zero (2017),Animation|Comedy|Fantasy
+193585,Flint (2017),Drama
+193587,Bungo Stray Dogs: Dead Apple (2018),Action|Animation
+193609,Andrew Dice Clay: Dice Rules (1991),Comedy
+bash-3.2$ exit
+exit
+
+Script done on Mon Mar  2 12:08:10 2020
